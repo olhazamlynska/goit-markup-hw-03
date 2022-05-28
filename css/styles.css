@@ -7,12 +7,41 @@
   --main-tittle-color: #ffffff;
   --second-tittle-color: #212121;
   --accent: #2196f3;
+  --max-margin-botom: 50px;
+  --min-margin-botom: 10px;
+  --average-margin-botom: 30px;
 }
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+ul,
+ol {
+  margin: 0;
+  padding-left: 0;
+}
+img {
+  margin: 0;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
   color: var(--main-text-color);
   background-color: var(--main-BG-color);
 }
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  outline: 1px solid red;
+}
+
 .link {
   text-decoration: none;
 }
@@ -47,6 +76,8 @@ body {
 /*------------------------- HEADER ---------------------------------------------------------------------------------------------------------------------------------- */
 .header {
   background-color: #fff;
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
 .header-nav {
 }
@@ -99,6 +130,8 @@ body {
 /*------------------------- INDEX HERO ------------------------------------------------------------------------------------------------------------------------------*/
 .hero {
   background-color: #2f303a;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 .hero-title {
   font-weight: 900;
@@ -107,6 +140,9 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  margin-bottom: var(--average-margin-botom);
+  max-width: 696px;
+
   color: var(--main-tittle-color);
 }
 .hero-btn {
@@ -117,6 +153,8 @@ body {
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
+  margin: auto;
+
   color: #ffffff;
   background-color: var(--main-btn-color);
 }
@@ -127,6 +165,8 @@ body {
 
 /*------------------------- INDEX ADVANTAGES ------------------------------------------------------------------------------------------------------------------------------*/
 .advantages {
+  padding-top: 94px;
+  padding-bottom: 47px;
 }
 .advantages-tittle {
 }
@@ -140,14 +180,18 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--second-tittle-color);
+  margin-bottom: var(--min-margin-botom);
 }
 .advantages-text {
 }
 
 /*------------------------- INDEX JOB ------------------------------------------------------------------------------------------------------------------------------*/
 .job {
+  padding-top: 47px;
+  padding-bottom: 47px;
 }
 .job-tittle {
+  margin-bottom: var(--max-margin-botom);
 }
 .job-list {
 }
@@ -159,8 +203,11 @@ body {
 
 .team {
   background-color: #f5f4fa;
+  padding-top: 47px;
+  padding-bottom: 94px;
 }
 .team-tittle {
+  margin-bottom: var(--max-margin-botom);
 }
 
 .team-item {
@@ -176,24 +223,37 @@ body {
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
+
   color: var(--second-tittle-color);
+
+  margin-bottom: var(--min-margin-botom);
 }
 .team-text {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
+
   color: var(--main-text-color);
 }
+.team-container {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
 /*-------------------------  FOOTER ------------------------------------------------------------------------------------------------------------------------------*/
 .footer {
   background-color: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .logo-footer {
   color: #ffffff;
+  margin-bottom: 20px;
 }
 .footer-address {
+  margin-top: 20px;
 }
 .footer-list {
 }
@@ -203,6 +263,8 @@ body {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+
+  margin-bottom: 9px;
 }
 .footer-link {
   color: #ffffff;
@@ -219,10 +281,13 @@ body {
 }
 /*-------------------------  PORTFOLIO  ------------------------------------------------------------------------------------------------------------------------------*/
 .works {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 .works-tittle {
 }
 .works-list {
+  margin-bottom: 50px;
 }
 .works-items {
 }
@@ -246,6 +311,9 @@ body {
 .works-link {
 }
 .works-img {
+}
+.works-info {
+  padding: 20px 24px;
 }
 .works-subtittle {
   font-size: 18px;
