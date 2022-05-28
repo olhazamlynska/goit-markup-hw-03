@@ -1,0 +1,261 @@
+:root {
+  --main-BG-color: #e5e5e5;
+  --main-text-color: #757575;
+  --main-btn-color: #2196f3;
+  --second-btn-color: #f5f4fa;
+  --hero-btn-color: #188ce8;
+  --main-tittle-color: #ffffff;
+  --second-tittle-color: #212121;
+  --accent: #2196f3;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  color: var(--main-text-color);
+  background-color: var(--main-BG-color);
+}
+.link {
+  text-decoration: none;
+}
+.list {
+  list-style: none;
+}
+.button {
+  font-family: inherit;
+  font-style: normal;
+  cursor: pointer;
+}
+.title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--second-tittle-color);
+}
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+/*------------------------- HEADER ---------------------------------------------------------------------------------------------------------------------------------- */
+.header {
+  background-color: #fff;
+}
+.header-nav {
+}
+.logo {
+  color: var(--accent);
+  font-family: 'Raleway';
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+.logo-text {
+  color: #000000;
+}
+.logo:hover,
+.logo:focus {
+  color: var(--accent);
+}
+
+.header-list {
+}
+.header-item {
+}
+
+.header-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--second-tittle-color);
+}
+.header-link:hover,
+.header-link:focus {
+  color: var(--accent);
+}
+.curent {
+  color: var(--accent);
+}
+.header-address {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--main-text-color);
+}
+.header-address:hover,
+.header-address:focus {
+  color: var(--accent);
+}
+/*------------------------- INDEX HERO ------------------------------------------------------------------------------------------------------------------------------*/
+.hero {
+  background-color: #2f303a;
+}
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--main-tittle-color);
+}
+.hero-btn {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  background-color: var(--main-btn-color);
+}
+.hero-btn:hover,
+.hero-btn:focus {
+  background-color: var(--hero-btn-color);
+}
+
+/*------------------------- INDEX ADVANTAGES ------------------------------------------------------------------------------------------------------------------------------*/
+.advantages {
+}
+.advantages-tittle {
+}
+.advantages-list {
+}
+.advantages-item {
+}
+.advantages-subtittle {
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--second-tittle-color);
+}
+.advantages-text {
+}
+
+/*------------------------- INDEX JOB ------------------------------------------------------------------------------------------------------------------------------*/
+.job {
+}
+.job-tittle {
+}
+.job-list {
+}
+.job-item {
+}
+.job-img {
+}
+/*------------------------- INDEX TEAM ------------------------------------------------------------------------------------------------------------------------------*/
+
+.team {
+  background-color: #f5f4fa;
+}
+.team-tittle {
+}
+
+.team-item {
+  background-color: #ffffff;
+}
+.team-link {
+}
+.team-img {
+}
+.team-subtittle {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--second-tittle-color);
+}
+.team-text {
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--main-text-color);
+}
+/*-------------------------  FOOTER ------------------------------------------------------------------------------------------------------------------------------*/
+.footer {
+  background-color: #2f303a;
+}
+
+.logo-footer {
+  color: #ffffff;
+}
+.footer-address {
+}
+.footer-list {
+}
+.footer-item {
+  font-family: inherit;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+.footer-link {
+  color: #ffffff;
+}
+.footer-contacts {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-link:hover,
+.footer-link:focus,
+.footer-contacts:hover,
+.footer-contacts:focus {
+  color: var(--accent);
+}
+/*-------------------------  PORTFOLIO  ------------------------------------------------------------------------------------------------------------------------------*/
+.works {
+}
+.works-tittle {
+}
+.works-list {
+}
+.works-items {
+}
+.works-item {
+  background-color: #eeeeee;
+}
+.works-btn {
+  color: var(--second-tittle-color);
+  background-color: var(--second-btn-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.works-btn:hover,
+.works-btn:focus {
+  color: #ffffff;
+  background-color: var(--main-btn-color);
+}
+.works-link {
+}
+.works-img {
+}
+.works-subtittle {
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--second-tittle-color);
+}
+.works-text {
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+  color: var(--main-text-color);
+}
