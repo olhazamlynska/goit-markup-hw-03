@@ -7,9 +7,9 @@
   --main-tittle-color: #ffffff;
   --second-tittle-color: #212121;
   --accent: #2196f3;
-  --max-margin-botom: 50px;
-  --min-margin-botom: 10px;
-  --average-margin-botom: 30px;
+  --max-margin: 50px;
+  --min-margin: 10px;
+  --average-margin: 30px;
 }
 p,
 h1,
@@ -23,9 +23,10 @@ h6 {
 ul,
 ol {
   margin: 0;
-  padding-left: 0;
+  padding: 0;
 }
 img {
+  display: block;
   margin: 0;
 }
 
@@ -35,8 +36,9 @@ body {
   background-color: var(--main-BG-color);
 }
 .container {
-  width: 1200px;
-  margin: 0 auto;
+  width: 1230px;
+  margin-left: auto;
+  margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
   outline: 1px solid red;
@@ -75,19 +77,31 @@ body {
 }
 /*------------------------- HEADER ---------------------------------------------------------------------------------------------------------------------------------- */
 .header {
-  background-color: #fff;
   padding-top: 24px;
   padding-bottom: 25px;
+
+  border-bottom: 1px solid #ececec;
+  background-color: #fff;
+}
+.header-conteiner {
+  display: flex;
+  justify-content: space-between;
 }
 .header-nav {
+  display: flex;
 }
+.logo-all {
+  margin-right: 93px;
+}
+
 .logo {
-  color: var(--accent);
   font-family: 'Raleway';
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+
+  color: var(--accent);
 }
 .logo-text {
   color: #000000;
@@ -98,8 +112,11 @@ body {
 }
 
 .header-list {
+  display: flex;
+  margin-left: auto;
 }
-.header-item {
+.header-item:not(:first-child) {
+  margin-left: 50px;
 }
 
 .header-link {
@@ -140,7 +157,10 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  margin-bottom: var(--average-margin-botom);
+
+  margin-bottom: var(--average-margin);
+  margin-left: auto;
+  margin-right: auto;
   max-width: 696px;
 
   color: var(--main-tittle-color);
@@ -149,12 +169,16 @@ body {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
-  display: flex;
-  align-items: center;
-  text-align: center;
   letter-spacing: 0.06em;
-  margin: auto;
 
+  display: block;
+  min-width: 200px;
+  height: 50px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin: auto;
+  border: transparent;
+  border-radius: 4px;
   color: #ffffff;
   background-color: var(--main-btn-color);
 }
@@ -171,16 +195,24 @@ body {
 .advantages-tittle {
 }
 .advantages-list {
+  display: flex;
+  justify-content: space-between;
 }
 .advantages-item {
+  width: 270px;
+  text-align: left;
 }
+.advantages-item:not(:first-child) {
+  margin-left: var(--max-margin);
+}
+
 .advantages-subtittle {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--second-tittle-color);
-  margin-bottom: var(--min-margin-botom);
+  margin-bottom: var(--min-margin);
 }
 .advantages-text {
 }
@@ -191,12 +223,17 @@ body {
   padding-bottom: 47px;
 }
 .job-tittle {
-  margin-bottom: var(--max-margin-botom);
+  margin-bottom: var(--max-margin);
 }
 .job-list {
+  display: flex;
+  margin-left: -30px;
 }
 .job-item {
+  width: calc(100% / 3 - 30px);
+  margin-left: var(--average-margin);
 }
+
 .job-img {
 }
 /*------------------------- INDEX TEAM ------------------------------------------------------------------------------------------------------------------------------*/
@@ -207,11 +244,20 @@ body {
   padding-bottom: 94px;
 }
 .team-tittle {
-  margin-bottom: var(--max-margin-botom);
+  margin-bottom: var(--max-margin);
+}
+.team-list {
+  display: flex;
+  justify-content: center;
 }
 
 .team-item {
+  min-width: 270px;
+
   background-color: #ffffff;
+}
+.team-item:not(:first-child) {
+  margin-left: var(--average-margin);
 }
 .team-link {
 }
@@ -226,7 +272,7 @@ body {
 
   color: var(--second-tittle-color);
 
-  margin-bottom: var(--min-margin-botom);
+  margin-bottom: var(--min-margin);
 }
 .team-text {
   font-size: 16px;
@@ -279,7 +325,7 @@ body {
 .footer-contacts:focus {
   color: var(--accent);
 }
-/*-------------------------  PORTFOLIO  ------------------------------------------------------------------------------------------------------------------------------*/
+/*-------------------------  PORTFOLIO HTML ------------------------------------------------------------------------------------------------------------------------------*/
 .works {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -288,26 +334,55 @@ body {
 }
 .works-list {
   margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
 }
 .works-items {
 }
-.works-item {
-  background-color: #eeeeee;
+
+.works-items:not(:first-child) {
+  margin-left: 8px;
 }
 .works-btn {
-  color: var(--second-tittle-color);
-  background-color: var(--second-btn-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
   text-align: center;
   letter-spacing: 0.03em;
+
+  padding: 6px 22px;
+  border-radius: 4px;
+  border: transparent;
+  color: var(--second-tittle-color);
+  background-color: var(--second-btn-color);
 }
+
 .works-btn:hover,
 .works-btn:focus {
   color: #ffffff;
   background-color: var(--main-btn-color);
 }
+.works-ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-left: -30px;
+  margin-bottom: -30px;
+}
+.works-item {
+  max-width: 370px;
+  flex-basis: calc(100% / 3 - 30px);
+  margin-left: 30px;
+  margin-bottom: 30px;
+
+  border-bottom: 1px solid #eeeeee;
+  background-color: #eeeeee;
+}
+
+.works-item:nth-last-child(-n + 3) {
+  margin-bottom: 0;
+}
+
 .works-link {
 }
 .works-img {
